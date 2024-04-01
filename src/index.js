@@ -19,6 +19,9 @@ function refreshWeather (response){
     let timeElement=document.querySelector("#time");
     timeElement.innerHTML = formatDate(date);
 
+    let iconElement = document.querySelector("#icon");
+    console.log(response.data.condition.icon_url);
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" /> `;
     
 }
 
