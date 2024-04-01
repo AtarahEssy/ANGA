@@ -12,15 +12,15 @@
 <body>
     <div class="weather-app">
     <header>
-        <form class="search-form">
-            <input type="search" placeholder="Enter a city.." class="search-form-input"/>
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter a city.." class="search-form-input" id="search-form-input"/>
             <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
         <div class="weather-app-data">
     <div>
-        <h1 class="weather-app-city">
+        <h1 class="weather-app-city" id="city">
         Paris
     </h1>
     <p class="weather-app-details">
@@ -42,5 +42,6 @@
         <a href="https://anga-weather-app.netlify.app/" target="_blank">Netlify</a>
     </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
