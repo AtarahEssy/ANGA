@@ -55,3 +55,41 @@ let searchFormElement=document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
+
+function displayForecast(){
+
+let forecastElement=document.querySelector("#forecast");
+let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+
+let forecastHtml="";
+
+days.forEach(function(day){
+   
+    forecastHtml = 
+    forecastHtml + `
+    <div class="weather-forecast">
+    <div class="forecast-1"> 
+        <div class="weather-forecast-date">
+        ${day}
+    </div>
+       <div>
+        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" alt="" width="60" />
+    </div>
+    <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-maximum"><strong>18°</strong></span>
+        <span class="weather-forecast-temperature-minimum">12°</span>
+    </div>
+    </div>
+    </div>
+    `;
+});
+
+forecastElement.innerHTML= forecastHtml;
+
+}
+displayForecast();
+
+
+
+
+

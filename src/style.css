@@ -82,11 +82,13 @@ color: #F65282;
     font-size: 28px;
 }
 .weather-forecast{
+    display: flex;
+    justify-content: space-between;
     margin-top: 40px;
   color: black;
 }
 .forecast-1{
-    width: 60px;
+    
     text-align: center;
 }
 .weather-forecast-date{
