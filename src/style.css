@@ -1,26 +1,25 @@
 body{
-  background-color: #F9F7FE; 
-  font-family: "Roboto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
+    background-image: url(../stars.jpg);
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100,
     "GRAD" 0;
-
 }
 a{
     color: #885DF1;
 }
-
 .weather-app{
-    background-color: white;
+    background-image: url(../stars.jpg);
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-border-radius: 16px;
+    border-radius: 16px;
 }
+
 header{
     border-bottom: 1px solid #F9F7FE ;
     padding: 0 0 30px 0;
@@ -44,17 +43,23 @@ font-size: 16px;
 }
 
 main{
+    background-image: url(../stars.jpg);
     padding: 30px 0;
 }
 .weather-app-data{
+    border: 1px solid #F9F7FE;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    border-radius: 16px;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    background-image: url(../stars.jpg);
 }
 .weather-app-city{
     margin: 0;
     font-size: 38px;
     line-height: 48px;
-        }
+          }
 .weather-app-details{
     font-weight: 500;
     font-size: 16px;
@@ -84,7 +89,7 @@ color: #F65282;
 .weather-forecast{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 25px;
   color: black;
 }
 .forecast-1{
